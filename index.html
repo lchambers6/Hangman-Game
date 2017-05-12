@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en-us"> 
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<title>Hangman Game</title>
+</head>
+
+<body>
+	<div class='container'>
+		<div class="row">
+			<div id="headSections" class="col-xs-12" >
+				<h1>Animal Hangman</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div id="sections" class="col-md-6">
+				<p>Choose a letter to begin guessing!<br>
+				Wins: <span id="winScore"></span><br>
+				Current Word<br>
+				<!-- <span id="currentWord"></span> --><br>
+				<span id="blankWord" style="letter-spacing: 2px;"></span><br>
+				Number of Remaining Guesses: <span id="looseScore"></span><br>
+				Letters Already Guessed:<br>
+				<span id="badGuess"></span></p>
+			</div>
+			<div id="sections" class="col-md-offset-6" class="col-md-6" >
+				<div id="photo">
+					<img id="animalImage" src="assets/images/Alpaca.jpg" alt="Alpaca">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="headSections" class="col-xs-12" >
+				<p>Text about the pictured animal.</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="assets/js/logic.js"></script>
+
+</html>

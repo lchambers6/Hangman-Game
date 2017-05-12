@@ -1,0 +1,34 @@
+body {
+	background-image: url(../images/jungleBackground.jpg);
+	margin: auto;
+}
+
+h1, p {
+	color: white;
+}
+
+.container {
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 2px solid white;
+}
+
+#sections {
+	text-align: center;
+	border: 2px solid white;
+	height: 60vh;
+	padding: 5%;
+}
+
+#sections img{
+	width:280px;
+	height:auto;
+	border: 2px solid white;
+}
+
+#headSections {
+	text-align: center;
+	border: 2px solid white;
+	padding: 10px;
+}
+
+
