@@ -12,31 +12,34 @@ h1 {
 p {
 	color: white;
 	font-family: 'Indie Flower', Times, Times New Roman, serif;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .container {
 	background-color: rgba(0, 0, 0, 0.7);
-	border: 2px solid white;
 }
 
-#sections {
+.sections {
 	text-align: center;
 	border: 2px solid white;
 	height: 70vh;
 	padding: 5%;
 }
 
-#sections img{
+.sections img{
 	width:280px;
 	height:auto;
 	border: 2px solid white;
 }
 
-#headSections {
+.headSections {
 	text-align: center;
 	border: 2px solid white;
-	padding: 10px;
+	padding: 10px 0px 10px 0px;
+
+}
+.row {
+	padding: 5px;
 }
 
 
