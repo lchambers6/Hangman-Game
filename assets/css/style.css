@@ -27,7 +27,7 @@ p {
 }
 
 .sections img{
-	width:280px;
+	width:80%;
 	height:auto;
 	border: 2px solid white;
 }
@@ -54,6 +54,7 @@ p {
 	.headSections {
 		display: none;
 	}
+
 	#mobileHide {
 		text-align: center;
 		border: 2px solid white;
