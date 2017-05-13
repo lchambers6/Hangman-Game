@@ -56,8 +56,10 @@ p {
 	}
 
 	#mobileHide {
+		display: inherit;
 		text-align: center;
 		border: 2px solid white;
 		padding: 10px 0px 10px 0px;
+		height: 98vh;
 	}
 }
