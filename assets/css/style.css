@@ -37,6 +37,7 @@ p {
 	border: 2px solid white;
 	padding: 10px 0px 10px 0px;
 }
+
 .row {
 	padding: 5px;
 }
@@ -52,5 +53,10 @@ p {
 
 	.headSections {
 		display: none;
+	}
+	#mobileHide {
+		text-align: center;
+		border: 2px solid white;
+		padding: 10px 0px 10px 0px;
 	}
 }
