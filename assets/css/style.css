@@ -36,10 +36,21 @@ p {
 	text-align: center;
 	border: 2px solid white;
 	padding: 10px 0px 10px 0px;
-
 }
 .row {
 	padding: 5px;
 }
 
+#mobileHide {
+	display: none;
+}
 
+@media screen and (max-device-height: 799px) {
+	.sections {
+		display: none;
+	}
+
+	.headSections {
+		display: none;
+	}
+}
