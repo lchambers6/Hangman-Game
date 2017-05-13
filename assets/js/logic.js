@@ -4,7 +4,7 @@ var animals = [
 {name: "Giraffe", Fact: "A giraffe's neck is too short to reach the ground. As a result, it has to awkwardly spread its front legs or kneel to reach the ground for a drink of water."}, 
 {name: "Barn Owl", Fact: "Barn Owls have very long legs, toes and talons to help them to catch prey hidden under long grass."}, 
 {name: "Cuttlefish", Fact: "Cuttlefish can change to be almost any color—even though they're colorblind."}, 
-{name: "Leafy Seadragon", Fact: "Leafy Seadragon Fact"}, 
+{name: "Leafy Seadragon", Fact: "The Leafy Sea Dragon has no known predators. Their leafy camouflage and spiny fins keep large fish from snacking on them."}, 
 {name: "Sun Bear", Fact: "A sun bear's diet consists of lizards, little birds, rodents, insects, termites, fruit and honey."}, 
 {name: "Komondor Dog", Fact: "The Komondor dog was bred to guard livestock."}, 
 {name: "Angora Rabbit", Fact: "There are four types of Angora rabbits: English, French, Giant, and Satin."}, 
@@ -52,7 +52,8 @@ function guessAnimal() {
 		if ((event.keyCode <= 90 && event.keyCode >= 65)) {
 			document.getElementById("badKey").innerHTML = "";
 			if ((goodGuess.indexOf(String.fromCharCode(event.keyCode)) >= 0) || (badGuess.indexOf(String.fromCharCode(event.keyCode)) >= 0)) {
-				document.getElementById("badKey").innerHTML = "You already guessed that letter.";
+				document.getElementById("badKey").innerHTML = "";
+				setTimeout(function() {document.getElementById("badKey").innerHTML = "You already guessed that letter."}, 50);
 				}
 			if ((currentWord.toUpperCase().indexOf(String.fromCharCode(event.keyCode)) != -1) && (goodGuess.indexOf(String.fromCharCode(event.keyCode)) === -1)) {
 				goodGuess.push(String.fromCharCode(event.keyCode));
@@ -66,13 +67,14 @@ function guessAnimal() {
 						looseScore--;
 			}
 		} else {
-			document.getElementById("badKey").innerHTML = "That is an unexceptable key selection.";
+			document.getElementById("badKey").innerHTML = "";
+			setTimeout(function() {document.getElementById("badKey").innerHTML = "That is an unexceptable key selection."}, 50);
 		}
 
 		if (blankWord === currentWord) {
 			winScore++;
 			document.getElementById("interstFact").innerHTML = animals[randNum].Fact;
-			document.getElementById("restart").innerHTML = "You won that round!<br>Press Space Bar to Play Again!";
+			document.getElementById("restart").innerHTML = "You won this round!<br>Press Space Bar to Play Again!";
 			document.onkeyup = function(event) {
 				if (event.keyCode === 32) {
 					generateAnimal();

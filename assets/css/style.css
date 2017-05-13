@@ -35,7 +35,7 @@ p {
 .headSections {
 	text-align: center;
 	border: 2px solid white;
-	padding: 10px 0px 10px 0px;
+	padding: 10px;
 }
 
 .row {
@@ -46,7 +46,7 @@ p {
 	display: none;
 }
 
-@media screen and (max-device-height: 799px) {
+@media screen and (max-device-width: 480px) {
 	.sections {
 		display: none;
 	}
